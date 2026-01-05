@@ -88,6 +88,8 @@ class SSEManager: ObservableObject {
         
     }
     
+    //adding a comment so I can commit - this is a test
+    
     // SSEManager.swift (place near connectToSSE or as a private helper)
     private func messageFromRoot(_ root: Root) -> [String: Any] {
         var contents: [[String: Any]] = []
