@@ -39,12 +39,7 @@ class SSEManager: ObservableObject {
             self?.objectWillChange.send()
         }
     }
-    
-    //var apiKey = "eyJraWQiOiIxOTczNzM2MzI5OTk4MzM2NiIsImFsZyI6IkVTMjU2In0.eyJwIjoiMzAxMTY4MjY5MTMzOjMwMTE2ODI2NDE5NyIsImlzcyI6IlNGOjEwNDkiLCJleHAiOjE3OTg0ODUwNjJ9.-Lw5xp6VEhZyh9ktkPsjEULXNbfTmU2WiDRv6frm2qmML7RsSVf14osVRExdNCTOtPQ3oAIm1MuKdM-qricA4Q"
-    
-    //var baseURL = "https://SLALOM-SNOWFLAKE_ILABS_EMERGEPR.snowflakecomputing.com/api/v2/databases/DAMPIERMIKE/schemas/PUBLIC/agents/DAMPIERMIKE_TRIP_DATA:run"
-    
-    
+
     func testConnect(PAT: String, accountURL: String, database: String, schema: String, agent: String) async -> String {
         let baseURL = "https://\(accountURL)/api/v2/databases/\(database)/schemas/\(schema)/agents/\(agent)"
         var returnStatus = "No agent found"
